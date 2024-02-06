@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1>
+        <h2>Samuel</h2>
+        <ul>
+            <li>
+                <button id="dashboard-button">
+                    <a href="/dashboard">
+                        <img src="/img/iconocasa.png" alt="restaurante">Dashboard
+                    </a>
+                </button>
+                <button id="menu-button">
+                    <a href="/menuListar">
+                        <img src="/img/menuicono.png" alt="creacion">Creacion de menus
+                    </a>
+                </button>
+                <button id="carrito-button">
+                    <a href="/carrito">
+                        <img src="/img/carritoicono.png" alt="carrito">Carrito de compras
+                    </a>
+                </button>
+                <button id="metodos-button">
+                    <a href="/metodos">
+                        <img src="/img/tarjetaicono.png" alt="metodos">Metodos de pagos
+                    </a>
+                </button>
+                <button id="visualizar-button">
+                    <a href="/visualizar">
+                        <img src="/img/visulaizarmenuicono.png" alt="visualizar">Visualizar menu
+                    </a>
+                </button>
+            </li>
+        </ul>
+        <img src="/img/logo1.jpg" id="logoizquierdo">
+    </div>
+
+    <div id="main-content">
+
+        <h1>Dashboard</h1>
+
+        <div id="user-info">
+            <img src="/img/usuarioicono.png">
+            <h2>Samuel Robertson</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+        
+    </div>
+
+    <div id="franja">
+        <div id="welcome-message">
+            <h1>Bienvenido,</h1>
+            <h2>Samuel</h2>
+            <p>Esto es lo que te espera hoy!</p>
+        </div>
+        <div id="info-buttons">
+            <div id="pedidos-dia">
+                <button><a href="/formulario"><img src="/img/pedidosicono.png" alt="icon">Pedidos en<br> el día<br>55</a></button>
+            </div>
+            <div id="pedidos-anulados">
+                <button><a href="/formulario"><img src="/img/rechazadoicono.png" alt="icon">Pedidos anulados<br>55</a></button>
+            </div>
+            <div id="pedidos-entregados">
+                <button><a href="/formulario"><img src="/img/entregadoicono.png" alt="icon">Pedidos entregados<br>55</a></button>
+            </div>
+            <div id="pedidos-pendientes">
+                <button><a href="/formulario"><img src="/img/pendienteicono.png" alt="icon">Pedidos pendientes<br>55</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="actividad">
+        <h1>Actividad del restaurante</h1>
+        <div id="actividad-card">
+        </div>
+    </div>
+
+    <div id="productos-mas-vendidos">
+        <h1>Productos mas vendidos</h1>
+        <p>Productos mas ordenados por los clientes</p>
+        <div id="productos-mas-vendidos-card">
+            
+        </div>
+    </div>
+
+    <div id="plato">
+        <div id="plato-card">
+            <img src="/img/ceviche.jpeg" alt="ceviche">
+            <h1>Ceviche</h1>
+            <p>Plato tradicional de la cocina latinoamericana, especialmente en Perú y Ecuador</p>
+            <h3>$12.50</h3>
+            <button id="edit-btn">
+                <a href="/formulario">Editar plato</a>
+            </button>
+        </div>
+    </div>
+
+    <div id="historial">
+        <h1>Historial de transacciones</h1>
+        <div id="historial-cards">
+            <ul>
+                <li>
+                    <div id="transferencia">
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="metodos">
+        <h1>Metodos de pago</h1>
+        <p>Metodos de pago mas usados por los usuarios</p>
+        <div id="metodos-card">
+        </div>
+    </div>
+
+</body>
+</html>
