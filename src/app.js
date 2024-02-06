@@ -96,11 +96,9 @@ app.use(require("./router/registro.rutas"))
 app.use(require('./router/index.rutas'))
 app.use(require('./router/principal.router'))
 app.use(require('./router/tienda.router'))
-app.use(require('./router/menu.router'))
+app.use(require('./router/dashboard.rutas'))
+app.use('/entradas',require('./router/entradas.rutas'))
 //Registro de la tienda
 app.use('/tienda', require('./router/tienda.router'))
-app.get('/menuListar', (req, res) => {
-    res.render('menu/menuListar')
-})
 
 module.exports = app;

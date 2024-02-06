@@ -11,6 +11,7 @@
 
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
+        
         <h2>Samuel</h2>
         <ul>
             <li>
@@ -59,7 +60,7 @@
         <div id="card-container">
             <div id="card1">
                 <h1>Entradas</h1>
-                <button><a href="/formulariomenu">Agregar</a></button>
+                <button><a href="/entradas/agregar">Agregar</a></button>
             </div>
             <div id="card2">
                 <h1>Sopas</h1>
@@ -73,6 +74,44 @@
                 <h1>Bebidas</h1>
                 <button><a href="/formulariomenu">Agregar</a></button>
             </div>
+            {{!-- <form action="menu/agregar/"method="post"></form>
+            <form action="menu/editar/"method="post"></form>
+            <form action="menu/listar/"method="get"></form>
+<table class="tabla-registros">
+        <h1>Lista de Objeto</h1>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Número de serie</th>
+                <th>Número de contacto</th>
+                <th>Correo electrónico</th>
+                <th>Fecha de pérdida</th>
+                <th>Hora de pérdida</th>
+                <th>Ubicación de pérdida</th>
+                <th>color</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each lista}}
+                <tr>
+                    <td>{{nombreMenu}}</td>
+                    <td>{{precioMenu}}</td>
+                    <td>{{categoria}}</p>
+                        <td>{{imageMenu}}</td>
+                    <td>
+                        <a href="/objeto/editar/{{idMenu}}">
+                            <button class="login" type="button">Editar</button>
+                        </a>
+                        <a href="/objeto/eliminar/{{idMenu}}">
+                            <button type="button" class="atras" style="background-color: red;">Eliminar</button>
+                        </a>
+                    
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody> --}}
         </div>
     </div>
 </body>

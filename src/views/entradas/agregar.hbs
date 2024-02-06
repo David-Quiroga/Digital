@@ -21,7 +21,7 @@
                 </button>
                 <button id="menu-button">
                     <a href="/menuListar">
-                        <img src="/img/menuicono.png" alt="creacion">Creacion de menus
+                        <img src="/img/menuicono.png" alt="creacion">Creacion del menu
                     </a>
                 </button>
                 <button id="carrito-button">
@@ -46,7 +46,7 @@
 
     <div id="main-content">
 
-        <h1>Creacion de Menu</h1>
+        <h1>Creacion de la Entrada</h1>
 
         <div id="user-info">
             <img src="/img/usuarioicono.png">
@@ -59,22 +59,23 @@
         <div id="card-container">
             <div id="card1">
 
-                <form action="/menu/formulariomenu/{{user.idGerente}}" method="post">
-
-                    <label for="nombre">Nombre</label><br>
-                    <input type="text" id="name" name="nombreMenu" placeholder="Ingrese el nombre del plato">
+                <form action="/entradas/agregar" method="post"> 
+                    <label for="nombre">Nombre de la entrada</label><br>
+                    <input type="text" id="name" name="nombre" placeholder="Ingrese el nombre del plato">
                     <label for="location">Precio</label><br>
-                    <input type="number" id="location" name="precioMenu" placeholder="Ingrese el precio del plato">
+                    <input type="number" id="location" name="precio" placeholder="Ingrese el precio del plato">
+                    <label for="location">Descripcion</label><br>
+                    <input type="text" id="location" name="descripcion" placeholder="Ingrese el precio del plato">
 
-                    <div id="subir-archivo">
+                    {{!-- <div id="subir-archivo">
                         <label for="logo">Imagen:</label>
                         <img id="subir-img-medio" src="img/imagenform.png" alt="imagen">
                         <h3>Subir una imagen 
                             <input type="file" name="imageRestaurant" id="inputImagen" accept="images/*"> 
                             <label for="inputImagen">Cargar imagen</label></h3>
-                    </div>
+                    </div> --}}
 
-                    <div id="tipo-de-comida">
+                    {{!-- <div id="tipo-de-comida">
                         <label for="tipoComida">Categoria:</label>
                         <select id="tipoComida" name="categoria">
                             <option value="Entradas">Entradas</option>
@@ -82,8 +83,8 @@
                             <option value="Postros">Postres</option>
                             <option value="Snacks">Snacks</option>
                         </select>
-                    </div>
-
+                    </div> --}}
+                    <br>
                     <button id="listo-btn" type="submit">Guardar</button>
 
                 </form>

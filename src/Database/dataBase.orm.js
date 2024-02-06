@@ -24,7 +24,11 @@ sequelize.sync({ force: false })
 	const tiendaModel = require('../models/tienda') 
 	const dueñoModel = require('../models/dueño') 
 	const clienteModel = require('../models/gerente'); 
-	const menuModel = require('../models/menu')
+	//const menuModel = require('../models/menu')
+	const postresModel = require('../models/postres')
+	const sopasModel = require('../models/sopas')
+	const bebidasModel	= require('../models/bebidas')
+	const entradaModel = require('../models/entradas')
 
 	
 	//sincronia
@@ -32,22 +36,37 @@ sequelize.sync({ force: false })
 	const restaurantes =  tiendaModel(sequelize, Sequelize)
 	const dueño = dueñoModel(sequelize, Sequelize)
 	const cliente = clienteModel(sequelize, Sequelize)
-	const menu = menuModel(sequelize, Sequelize)
+	//const menu = menuModel(sequelize, Sequelize)
+	const postres = postresModel(sequelize, Sequelize)
+	const sopas = sopasModel(sequelize, Sequelize)
+	const entrada = entradaModel(sequelize, Sequelize)
+	const bebida = bebidasModel(sequelize, Sequelize)
 	
-	//relacion tienda-dueño
+
 	dueño.hasMany(restaurantes)
 	restaurantes.belongsTo(dueño)
 
-	//relacion factura-cliente
-	restaurantes.hasMany(menu)
-	menu.belongsTo(restaurantes)
+	restaurantes.hasMany(postres)
+	postres.belongsTo(restaurantes)
 	
-	dueño.hasMany(menu)
-	menu.belongsTo(dueño)
+	restaurantes.hasMany(sopas)
+	sopas.belongsTo(restaurantes)
+	
+	restaurantes.hasMany(entrada)
+	entrada.belongsTo(restaurantes)
+	
+	restaurantes.hasMany(bebida)
+	bebida.belongsTo(restaurantes)
+	
+
+
 	
 	module.exports = {
 		dueño,
 		restaurantes,
 		cliente,
-		menu
+		postres,
+		bebida,
+		sopas,
+		entrada
 	};

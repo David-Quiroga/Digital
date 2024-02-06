@@ -9,23 +9,19 @@ tiendaCTl.mostrar = (req, res) => {
     res.render('tienda/agregar');
 }
 
-tiendaCTl.showDashboard = (req, res) => {
-    res.render('dashboard/dashboard')
-}
 
 tiendaCTl.mandar = async (req, res) => {
-    const id = req.user.idGerente
+    const id = req.user.idRestaurant
     const { idRestaurant, restaurantName, location, imageRestaurant, tipoComida } = req.body
     const newSend = {
         restaurantName,
         location,
         imageRestaurant,
         tipoComida,
-        gerenteIdGerente: id
     }
     await orm.restaurantes.create(newSend)
     
-    res.redirect('/tienda/lista/' + id);
+    res.redirect('/tienda/lista/');
 }
 
 tiendaCTl.lista = async (req, res) => {
@@ -48,14 +44,14 @@ tiendaCTl.actualizar = async (req, res) => {
         location,
         imageRestaurant,
         tipoComida,
-        gerenteIdGerente: id
+        // gerenteIdGerente: id
     }
     await orm.restaurantes.findOne({ where: {idRestaurante: ids } })
         .then(actualizar => {
             actualizar.update(newSend)
             req.flash('success', 'Actualizado con extio')
         })
-        res.redirect('/tienda/lista/' + ids);
+        res.redirect('/tienda/lista/' );
 }
 
 module.exports = tiendaCTl;
