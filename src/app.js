@@ -105,5 +105,6 @@ app.use('/bebidas',require('./router/bebidas.rutas'))
 //app.use('/bebidas',require('./router/postres.rutas'))
 //!Registro del restaurante
 app.use('/tienda', require('./router/tienda.router'))
+app.use('/metodos', require('./router/metodos.router'))
 
 module.exports = app;

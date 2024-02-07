@@ -114,10 +114,11 @@ body::after {
     font-family: 'Montserrat', sans-serif;
 }
 #user-info img {
+    position: absolute;
     width: 50px;
     height: 50px;
     margin-left: 785px;
-    margin-top: -150px;
+    margin-top: -50px;
 }
 #card-container {
     display: flex;
@@ -170,9 +171,10 @@ body::after {
 #subir-archivo{
     background-color: #E3E2E2;
     width: 45%;
+    height: 250px;
     display: inline-block;
     border-radius: 20px;    
-    margin-top: 40px;
+    margin-top: 30px;
     margin-right: 10px;
 }
 #subir-archivo h3{
@@ -213,7 +215,7 @@ body::after {
     width: 40%;
     display: inline-block;
     vertical-align: top;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 #tipo-de-comida label{
     font-family: 'Montserrat', sans-serif;
@@ -222,15 +224,15 @@ body::after {
 #tipoComida{
     font-family: 'Montserrat', sans-serif;
     background-color: #E3E2E2;
-    width: 400px;
-    height: 60px;
-    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+    margin-top: 5px;
     border-radius: 15px;
 }
 #listo-btn{
     font-family: 'Montserrat', sans-serif;
-    width: 300px;
-    height: 60px;
+    width: 250px;
+    height: 50px;
     display: block;
     margin-left: 450px;
     margin-top: -80px;
