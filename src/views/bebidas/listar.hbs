@@ -1,0 +1,10 @@
+<form action="bebidas/listar/" method="get"></form>
+
+{{#each lista}}
+
+<p>{{nombre}}</p>
+<p>{{descripcion}}</p>
+<p>{{precio}}</p>
+<p>{{estado}}</p>
+<a href="/bebidas/editar/{{idBebidas}}"><button type="submit">Editar</button></a>
+{{/each}}

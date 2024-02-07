@@ -89,16 +89,21 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, 'public')));
 //public 
 
-//routers
-
 //rutas principales
 app.use(require("./router/registro.rutas"))
 app.use(require('./router/index.rutas'))
 app.use(require('./router/principal.router'))
 app.use(require('./router/tienda.router'))
 app.use(require('./router/dashboard.rutas'))
+app.use(require('./router/sopas.rutas'))
+app.use(require('./router/postres.rutas'))
+app.use(require('./router/bebidas.rutas'))
 app.use('/entradas',require('./router/entradas.rutas'))
-//Registro de la tienda
+app.use('/sopas',require('./router/sopas.rutas'))
+app.use('/postres',require('./router/postres.rutas'))
+app.use('/bebidas',require('./router/bebidas.rutas'))
+//app.use('/bebidas',require('./router/postres.rutas'))
+//!Registro del restaurante
 app.use('/tienda', require('./router/tienda.router'))
 
 module.exports = app;

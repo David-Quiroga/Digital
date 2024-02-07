@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
     <title>Bienvenido</title>
 </head>
-<body>
 
+
+<body>
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
         <h2>Samuel</h2>
@@ -46,7 +48,7 @@
 
     <div id="main-content">
 
-        <h1>Creacion de la Entrada</h1>
+        <h1>Creacion de la Sopa</h1>
 
         <div id="user-info">
             <img src="/img/usuarioicono.png">
@@ -58,45 +60,21 @@
 
         <div id="card-container">
             <div id="card1">
-                <h1>btw estas editando</h1>
-                {{#each lista}}
-                <form action="/entradas/editar/{{idEntrada}}" method="post"> 
-                    <label for="nombre">Nombre de la entrada</label><br>
-                    <input type="text" id="name" name="nombre" value="{{nombre}}" placeholder="Ingrese el nombre del plato">
-                    <label for="location">Precio</label><br>
-                    <input type="number" id="location" name="precio" value="{{precio}}" placeholder="Ingrese el precio del plato">
+
+                <form action="/sopas/agregar" method="post">
+                    <label for="nombre">Nombre de la sopas</label><br>
+                    <input type="text" id="name" name="nombre" placeholder="Ingrese el nombre del plato">
                     <label for="location">Descripcion</label><br>
-                    <input type="text" id="location" name="descripcion" value="{{descripcion}}" placeholder="Ingrese el precio del plato">
+                    <input type="text" id="location" name="descripcion" placeholder="Ingrese el precio del plato">
+                    <label for="location">Precio</label><br>
+                    <input type="text" id="location" name="precio" placeholder="Ingrese el precio del plato">
                     <label for="location">Estado</label><br>
-                    <input type="text" id="location" name="estado" value="{{estado}}" placeholder="Ingrese el precio del plato">
-
-                    {{!-- <div id="subir-archivo">
-                        <label for="logo">Imagen:</label>
-                        <img id="subir-img-medio" src="img/imagenform.png" alt="imagen">
-                        <h3>Subir una imagen 
-                            <input type="file" name="imageRestaurant" id="inputImagen" accept="images/*"> 
-                            <label for="inputImagen">Cargar imagen</label></h3>
-                    </div> --}}
-
-                    {{!-- <div id="tipo-de-comida">
-                        <label for="tipoComida">Categoria:</label>
-                        <select id="tipoComida" name="categoria">
-                            <option value="Entradas">Entradas</option>
-                            <option value="Sopas">Sopas</option>
-                            <option value="Postros">Postres</option>
-                            <option value="Snacks">Snacks</option>
-                        </select>
-                    </div> --}}
-                    <br>
+                    <input type="text" id="location" name="estado" placeholder="Ingrese el precio del plato">
                     <button id="listo-btn" type="submit">Guardar</button>
-
                 </form>
-                {{/each}}
             </div>
         </div>
-        
     </div>
 </body>
+
 </html>
-
-

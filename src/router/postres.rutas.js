@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router()
 
-const {mostrar, mandar, listar, traer, actualizar} = require('../controller/entradas.controller')
-
-//FUNCIONAL
+const {mostrar, mandar, listar, traer, actualizar} = require('../controller/postres.controller')
 
 router.get('/agregar',mostrar);
 router.post('/agregar',mandar)

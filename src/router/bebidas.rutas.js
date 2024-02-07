@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router()
 
-const {mostrar, mandar, listar, traer, actualizar} = require('../controller/entradas.controller')
+const {mostrar, mandar, listar, traer, actualizar} = require('../controller/bebidas.controller')
 
 //FUNCIONAL
 

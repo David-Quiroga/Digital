@@ -46,7 +46,7 @@
 
     <div id="main-content">
 
-        <h1>Creacion de la Entrada</h1>
+        <h1>Creacion de la bebidas</h1>
 
         <div id="user-info">
             <img src="/img/usuarioicono.png">
@@ -58,17 +58,14 @@
 
         <div id="card-container">
             <div id="card1">
-                <h1>btw estas editando</h1>
-                {{#each lista}}
-                <form action="/entradas/editar/{{idEntrada}}" method="post"> 
+
+                <form action="/bebidas/agregar" method="post"> 
                     <label for="nombre">Nombre de la entrada</label><br>
-                    <input type="text" id="name" name="nombre" value="{{nombre}}" placeholder="Ingrese el nombre del plato">
+                    <input type="text" id="name" name="nombre" placeholder="Ingrese el nombre del plato">
                     <label for="location">Precio</label><br>
-                    <input type="number" id="location" name="precio" value="{{precio}}" placeholder="Ingrese el precio del plato">
-                    <label for="location">Descripcion</label><br>
-                    <input type="text" id="location" name="descripcion" value="{{descripcion}}" placeholder="Ingrese el precio del plato">
+                    <input type="number" id="location" name="precio" placeholder="Ingrese el precio del plato">
                     <label for="location">Estado</label><br>
-                    <input type="text" id="location" name="estado" value="{{estado}}" placeholder="Ingrese el precio del plato">
+                    <input type="text" id="location" name="estado" placeholder="Ingrese el precio del plato">
 
                     {{!-- <div id="subir-archivo">
                         <label for="logo">Imagen:</label>
@@ -91,7 +88,6 @@
                     <button id="listo-btn" type="submit">Guardar</button>
 
                 </form>
-                {{/each}}
             </div>
         </div>
         

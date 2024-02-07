@@ -1,0 +1,10 @@
+<form action="sopas/listar/" method="get"></form>
+
+{{#each lista}}
+
+<p>{{nombre}}</p>
+<p>{{descripcion}}</p>
+<p>{{precio}}</p>
+<p>{{estado}}</p>
+<a href="/sopas/editar/{{idSopa}}"><button type="submit">Editar</button></a>
+{{/each}}
