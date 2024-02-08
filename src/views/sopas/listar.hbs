@@ -65,10 +65,14 @@
             <div id="tarjetas-contenedor"> <!-- Nuevo contenedor para las tarjetas -->
                 {{#each lista}}
                 <div id="tarjeta">
-                    <p>{{nombre}}</p>
-                    <p>{{descripcion}}</p>
-                    <p>{{precio}}</p>
-                    <p>{{estado}}</p>
+                    <b>Nombre:</b>
+                    <p>{{nombre}}</p><br>
+                    <b>Descripcion:</b>
+                    <p>{{descripcion}}</p><br>
+                    <b>Precio:</b>
+                    <p>{{precio}}</p><br>
+                    <b>Estado:</b>
+                    <p>{{estado}}</p><br>
                     <a href="/sopas/editar/{{idSopa}}"><button type="submit">Editar</button></a>
                 </div>
                 {{/each}}

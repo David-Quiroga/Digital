@@ -196,7 +196,7 @@ body::after {
 #tarjeta{
     background-color: #EBBADD;
     margin-top: 10px;
-    height: 250px;
+    height: 260px;
     width: 190px;
     display: inline-block;
     border-radius: 10px;
@@ -212,10 +212,14 @@ body::after {
 }
 #tarjeta p{
     text-align: center;
-    margin-top: 20px;
+    margin-top: -5px;
+    display: inline-block;
 }
 #tarjeta a{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-decoration: none;
+}
+#tarjeta b{
+    margin-left: 10px;
 }
