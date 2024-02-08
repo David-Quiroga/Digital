@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router()
 
-const {mostrar, editar} = require('../controller/metodos.controller')
+const {editar} = require('../controller/carrito.controller')
 
-router.get('/agregar',mostrar);
 router.get('/editar', editar);
 
 module.exports = router

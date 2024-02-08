@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/metodosAgregar.css">
+    <link rel="stylesheet" href="/css/carritoEditar.css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
     <title>Bienvenido</title>
 </head>
@@ -69,24 +69,35 @@
             <h1>Estado</h1>
 
                 <div id="activo">
-        <label for="activo">Activo</label>
-        <input type="radio" name="estado" value="activo">
+                    <label for="activo">Activo</label>
+                    <input type="radio" name="estado" value="activo">
                 </div>
 
                 <div id="inactivo">
-        <label for="inactivo">Inactivo</label>
-        <input type="radio" name="estado" value="inactivo">
+                    <label for="inactivo">Inactivo</label>
+                    <input type="radio" name="estado" value="inactivo">
                 </div>
 
                 <div id="pendiente">
-        <label for="pendiente">Pendiente</label>
-        <input type="radio" name="estado" value="pendiente">
+                    <label for="pendiente">Pendiente</label>
+                    <input type="radio" name="estado" value="pendiente">
                 </div>
+
             </div>
+
+            {{!-- <div id="limite">
+                    <label for="quantity">Limite de pedidos</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="9">
+            </div> --}}
 
             <button id="listo-btn" type="submit">Guardar</button>
 
         </form>
+
+        <div id="limite">
+                    <label for="quantity">Limite de pedidos</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="9">
+        </div>
 
     </div>
 

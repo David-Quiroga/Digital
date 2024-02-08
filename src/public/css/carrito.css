@@ -248,6 +248,8 @@ body::after {
 #comprobante-foto hr{
     font-family: 'Montserrat', sans-serif;
     background-color: #000000;
+    width: 310px;
+    margin-left: 0;
 }
 #comprobante-foto h4{
     font-family: 'Montserrat', sans-serif;
@@ -357,6 +359,7 @@ body::after {
 }
 #editar a{
     color: #000000;
+    text-decoration: none;
 }
 
 #boton-activo {
@@ -371,6 +374,7 @@ body::after {
 }
 #boton-activo a{
     color: #000000;
+    text-decoration: none;
 }
 #boton-inactivo {
     background-color: #F6A5A5; /* Rojo */
@@ -382,6 +386,7 @@ body::after {
 }
 #boton-inactivo a{
     color: #000000;
+    text-decoration: none;
 }
 hr{
     background-color: #000000;
