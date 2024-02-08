@@ -171,3 +171,51 @@ body::after {
     margin-left: 785px;
     margin-top: -70px;
 }
+#plato-tarjeta{
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 650px;
+    width: 1000px;
+}
+
+#plato-tarjeta h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#tarjetas-contenedor { /* Nuevo estilo para el contenedor de las tarjetas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 600px;
+}
+
+#tarjeta{
+    background-color: #EBBABA;
+    margin-top: 10px;
+    height: 250px;
+    width: 190px;
+    display: inline-block;
+    border-radius: 10px;
+}
+#tarjeta button{
+    background-color: #0085FF;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    display: block; /* Añade esta línea */
+    margin: auto;
+    cursor: pointer;
+}
+#tarjeta p{
+    text-align: center;
+    margin-top: 20px;
+}
+#tarjeta a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}

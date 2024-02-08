@@ -57,20 +57,27 @@
 
         <div id="lineahorizontal"></div>
 
-        {{!-- <div>
+        <div id="plato-tarjeta">
+            <h1>Entradas</h1>
             <form action="entradas/listar/" method="get"></form>
 
-            {{#each lista}}
-
-            <p>{{nombre}}</p>
-            <p>{{descripcion}}</p>
-            <p>{{precio}}</p>
-            <p>{{estado}}</p>
-            <a href="/entradas/editar/{{idEntrada}}"><button type="submit">Editar</button></a>
-            {{/each}}
-        </div> --}}
-
+            <div id="tarjetas-contenedor"> <!-- Nuevo contenedor para las tarjetas -->
+                {{#each lista}}
+                <div id="tarjeta">
+                    <b>Nombre:</b>
+                    <p>{{nombre}}</p><br>
+                    <b>Descripcion:</b>
+                    <p>{{descripcion}}</p><br>
+                    <b>Precio:</b>
+                    <p>{{precio}}</p><br>
+                    <b>Estado:</b>
+                    <p>{{estado}}</p><br>
+                    <a href="/entradas/editar/{{idEntrada}}"><button type="submit">Editar</button></a>
+                </div>
+                {{/each}}
+            </div>
         </div>
+
     </div>
 </body>
 </html>
