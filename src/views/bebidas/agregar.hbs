@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/formulariomenu.css">
+    <link rel="stylesheet" href="/css/bebidasAgregar.css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
     <title>Bienvenido</title>
 </head>
@@ -20,7 +20,7 @@
                     </a>
                 </button>
                 <button id="menu-button">
-                    <a href="/menuListar">
+                    <a href="/crearMenu">
                         <img src="/img/menuicono.png" alt="creacion">Creacion del menu
                     </a>
                 </button>
@@ -60,12 +60,12 @@
             <div id="card1">
 
                 <form action="/bebidas/agregar" method="post"> 
-                    <label for="nombre">Nombre de la entrada</label><br>
-                    <input type="text" id="name" name="nombre" placeholder="Ingrese el nombre del plato">
+                    <label for="nombre">Nombre de la bebida</label><br>
+                    <input type="text" id="name" name="nombre" placeholder="Ingrese el nombre de la bebida">
                     <label for="location">Precio</label><br>
-                    <input type="number" id="location" name="precio" placeholder="Ingrese el precio del plato">
+                    <input type="number" id="location" name="precio" placeholder="Ingrese el precio de la bebida">
                     <label for="location">Estado</label><br>
-                    <input type="text" id="location" name="estado" placeholder="Ingrese el precio del plato">
+                    <input type="text" id="location" name="estado" placeholder="Ingrese el estado de la bebida">
 
                     {{!-- <div id="subir-archivo">
                         <label for="logo">Imagen:</label>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/formulariomenu.css">
+    <link rel="stylesheet" href="/css/postresAgregar.css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
     <title>Bienvenido</title>
 </head>
@@ -22,7 +22,7 @@
                     </a>
                 </button>
                 <button id="menu-button">
-                    <a href="/menuListar">
+                    <a href="/crearMenu">
                         <img src="/img/menuicono.png" alt="creacion">Creacion del menu
                     </a>
                 </button>
@@ -63,13 +63,13 @@
 
                 <form action="/postres/agregar" method="post">
                     <label for="nombre">Nombre del Postres</label><br>
-                    <input type="text" id="name" name="nombre" placeholder="Ingrese el nombre del plato">
+                    <input type="text" id="name" name="nombre" placeholder="Ingrese el nombre del postre">
                     <label for="location">Descripcion</label><br>
-                    <input type="text" id="location" name="descripcion" placeholder="Ingrese el precio del plato">
+                    <input type="text" id="location" name="descripcion" placeholder="Ingrese la descripcion del postre">
                     <label for="location">Precio</label><br>
-                    <input type="text" id="location" name="precio" placeholder="Ingrese el precio del plato">
+                    <input type="text" id="location" name="precio" placeholder="Ingrese el precio del postre">
                     <label for="location">Estado</label><br>
-                    <input type="text" id="location" name="estado" placeholder="Ingrese el precio del plato">
+                    <input type="text" id="location" name="estado" placeholder="Ingrese el estado del postre">
                     <button id="listo-btn" type="submit">Guardar</button>
                 </form>
             </div>

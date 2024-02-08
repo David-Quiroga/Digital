@@ -179,99 +179,58 @@ body::after {
     justify-content: space-between;
     margin-left: 50px;
 }
-/*aqui empiezan las cards*/
+
 #card1 {
-    background-image: url(../img/entradasfondo.jpeg), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    background-blend-mode: darken;
+    background-image: url(../img/fondoformulario.png), linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+    background-blend-mode: lighten;
     background-size: cover; /* Para que la imagen cubra todo el div */
     background-position: center; /* Para centrar la imagen */
     background-repeat: no-repeat; 
     margin-top: 30px;
-    margin-right: 20px;
-    width: 250px;
-    height: 590px;
+    margin-left: 100px;
+    width: 900px;
+    height: 650px;
     box-sizing: border-box;
-    text-align: center;
-    border-radius: 10px;
-}
-#card2 {
-    background-image: url(../img/sopasfondo.jpeg), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    background-blend-mode: darken;
-    background-size: cover; /* Para que la imagen cubra todo el div */
-    background-position: center; /* Para centrar la imagen */
-    background-repeat: no-repeat; 
-    margin-top: 110px;
-    margin-right: 20px;
-    width: 250px;
-    height: 590px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 10px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-radius: 20px;
+    padding: 20px; /* Añade un poco de espacio interno para mayor legibilidad */
 }
 
-#card3 {
-    background-image: url(../img/postresfondo.jpeg), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    background-blend-mode: darken;
-    background-size: cover; /* Para que la imagen cubra todo el div */
-    background-position: center; /* Para centrar la imagen */
-    background-repeat: no-repeat; 
-    margin-top: 30px;
-    margin-right: 20px;
-    width: 250px;
-    height: 590px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 10px;
+#card1 form {
+    margin-top: 10px; /* Ajusta el margen superior del formulario según tus necesidades */
+    margin-left: 40px;
 }
 
-#card4 {
-    background-image: url(../img/bebidafondo.PNG), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    background-blend-mode: darken;
-    background-size: cover; /* Para que la imagen cubra todo el div */
-    background-position: center; /* Para centrar la imagen */
-    background-repeat: no-repeat; 
-    margin-top: 110px;
-    width: 250px;
-    height: 590px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 10px;
-}
-#card1 button,
-#card2 button,
-#card3 button,
-#card4 button{
-    background-color: rgba(0, 148, 255, 0.5);
-    border: none;
-    margin-top: 300px;
-    font-size: 20px;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-}
-#ver-todos{
-    margin-top: 20px;
-    height: 50px;
-}
-#ver-todos button{
-    background-color: #6d6d6d;
-    margin-top: -30px;
-}
-#card1 h1,
-#card2 h1,
-#card3 h1,
-#card4 h1{
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 400;
-    margin-top: 90px;
-}
-#card1 a,
-#card2 a,
-#card3 a,
-#card4 a{
+#card1 label {
+    display: block;
+    font-size: 30px; /* Ajusta el tamaño de la fuente de las etiquetas según tus necesidades */
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: #FFFFFF;
+    font-weight: 500;
+    color: #F5F5DC;
 }
 
+#card1 input {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E3E2E2;
+    width: 89%; /* Ajusta el ancho de los inputs para que ocupen todo el contenedor */
+    height: 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-top: -30px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: none;
+}
+#listo-btn{
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+    height: 60px;
+    display: block;
+    margin-left: 250px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0085FF;
+    font-size: 30px;
+    color: #FFFFFF;
+}
